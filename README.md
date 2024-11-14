@@ -3,4 +3,4 @@
 # [ER диаграмма](https://disk.yandex.ru/client/disk/14.09%20про/Шамиев?idApp=client&dialog=slider&idDialog=%2Fdisk%2F14.09%20про%2FШамиев%2Fизображение_2024-09-27_145743815.png)
 # [Описание предметной области](https://docs.yandex.ru/docs/view?url=ya-disk%3A%2F%2F%2Fdisk%2F14.09%20про%2FШамиев%2FШамиев%20П-2.pdf&name=Шамиев%20П-2.pdf&uid=1735612068)
 # [Описание структуры](https://docs.yandex.ru/docs/view?url=ya-disk%3A%2F%2F%2Fdisk%2F14.09%20про%2FШамиев%2FТаблица%201%20-.pdf&name=Таблица%201%20-.pdf&uid=1735612068)
-# [Нормализация import](https://docviewer.yandex.ru/?url=ya-disk%3A%2F%2F%2Fdisk%2F14.09%20про%2FШамиев%2Fнормализация%20import.pdf&name=нормализация%20import.pdf&uid=1735612068)
+# [Нормализация import]([https://docviewer.yandex.ru/?url=ya-disk%3A%2F%2F%2Fdisk%2F14.09%20про%2FШамиев%2Fнормализация%20import.pdf&name=нормализация%20import.pdf&uid=1735612068](https://docs.yandex.ru/docs/view?url=ya-disk%3A%2F%2F%2Fdisk%2F14.09%20про%2FШамиев%2Fнормализация%20импорт.pdf&name=нормализация%20импорт.pdf&uid=1735612068&nosw=1))
