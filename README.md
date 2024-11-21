@@ -4,4 +4,4 @@
 # [Описание предметной области](https://docs.yandex.ru/docs/view?url=ya-disk%3A%2F%2F%2Fdisk%2F14.09%20про%2FШамиев%2FШамиев%20П-2.pdf&name=Шамиев%20П-2.pdf&uid=1735612068)
 # [Описание структуры](https://docs.yandex.ru/docs/view?url=ya-disk%3A%2F%2F%2Fdisk%2F14.09%20про%2FШамиев%2FТаблица%201%20-.pdf&name=Таблица%201%20-.pdf&uid=1735612068)
 # [Нормализация import](https://docs.yandex.ru/docs/view?url=ya-disk%3A%2F%2F%2Fdisk%2F14.09%20про%2FШамиев%2Fнормализация%20импорт.pdf&name=нормализация%20импорт.pdf&uid=1735612068&nosw=1)
-#[41 Запрос](https://github.com/Atbtako/OPBDuksivt/blob/main/41)
+# [41 Запрос](https://github.com/Atbtako/OPBDuksivt/blob/main/41)
