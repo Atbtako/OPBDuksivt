@@ -33,7 +33,7 @@ SELECT b.book_name AS Title_book, (SELECT pk.price / b.colvo FROM pokupki pk WHE
 SELECT b.book_name AS Title_book, (SELECT pk.price / b.colvo FROM pokupki pk WHERE pk.book_id = b.book_id) AS Cost_Per_Page FROM book b;SELECT name AS Name_author, EXTRACT(YEAR FROM AGE(CURRENT_DATE, birthday)) AS Years_Since_Birth FROM autor;
 SELECT SUM(pk.price * pk.kolvo) AS Total_Cost FROM pokupki pk WHERE pk.postav_code = (SELECT kod_postavki FROM postavki WHERE company_name = 'ЗАО Оптторг');
 SELECT COUNT(*) AS Total_Purchases FROM pokupki WHERE zakup_date BETWEEN '2003-01-01' AND '2003-02-01';
-
+SELECT AVG(pokupki.price) AS Avg_Cost, AVG(pokupki.kolvo) AS Avg_Amount FROM pokupki, book, autor WHERE pokupki.book_id = book.book_id AND book.autor_code = autor.autor_id AND autor.autor_name = 'Акунин';
 SELECT pk.*, b.book_name AS Title_book FROM pokupki pk JOIN book b ON pk.book_id = b.book_id ORDER BY (pk.price * pk.kolvo) ASC LIMIT 1;
 SELECT pk.*, b.book_name AS Title_book FROM pokupki pk JOIN book b ON pk.book_id = b.book_id ORDER BY (pk.price * pk.kolvo) DESC LIMIT 1;
 SELECT b.book_name AS Title_book, SUM(pk.kolvo * pk.price) AS Itogo FROM pokupki pk JOIN book b ON pk.book_id = b.book_id WHERE pk.zakup_date BETWEEN '2002-01-01' AND '2002-06-01' GROUP BY b.book_name;
