@@ -39,4 +39,12 @@ SELECT pk.*, (SELECT b.book_name FROM book b WHERE b.book_id = pk.book_id) AS Ti
 SELECT b.book_name AS Title_book, SUM(pk.kolvo * pk.price) AS Itogo FROM pokupki pk, book b WHERE pk.book_id = b.book_id AND pk.zakup_date BETWEEN '2002-01-01' AND '2002-06-01' GROUP BY b.book_name;
 SELECT b.book_name AS Title_book, (pk.price / b.colvo) AS One_page FROM pokupki pk, book b WHERE pk.book_id = b.book_id;
 SELECT SUM(pk.price * pk.kolvo) AS Sum_cost FROM pokupki pk WHERE pk.postav_code = (SELECT kod_postavki FROM postavki WHERE company_name = 'ОАО Луч');
-
+UPDATE book SET colvo = 300 WHERE autor_code = 56 AND book_name = 'Мемуары';
+UPDATE postavki SET adress= 'Нет совпадений' WHERE adress = '';
+UPDATE pokupki SET price = price * 1.20 WHERE zakup_date >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH);
+SELECT @max_code := MAX(pokup_code) FROM pokupki; SET @new_code := @max_code + 1; INSERT INTO pokupki (pokup_code, postav_type, /* другие поля */) VALUES (@new_code, 'опт', /* другие значения */);
+SELECT @max_code := MAX(book_id) FROM book; SET @new_code := @max_code + 1; INSERT INTO book (book_id, book_name, colvo, autor_code, izdatel_id) VALUES (@new_code, 'Наука. Техника. Инновации', 12,39,903362 );
+SELECT @max_code := MAX(izdatel_id) FROM izdatel; SET @new_code := @max_code + 1; INSERT INTO izdatel (izdatel_id, izdat_name, city) VALUES (@new_code, 'Наука' ,'Москва');
+DELETE FROM pokupki WHERE kolvo = 0;
+DELETE FROM autor WHERE autor_name = null;
+DELETE FROM postavki WHERE inn = null;
